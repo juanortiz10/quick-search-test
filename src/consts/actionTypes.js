@@ -1,3 +1,4 @@
-export const GET_DEMO_REQUEST = 'GET_DEMO_REQUEST';
-export const GET_DEMO_SUCCESS = 'GET_DEMO_SUCCESS';
-export const SEARCH_MEDIA_ERROR = 'SEARCH_MEDIA_ERROR';
+export const GET_QUICK_SEARCH = 'test.purepoint.GET_QUICK_SEARCH';
+export const GET_QUICK_SEARCH_SUCCESS =
+	'test.purepoint.GET_QUICK_SEARCH_SUCCESS';
+export const GET_QUICK_SEARCH_ERROR = 'test.purepoint.GET_QUICK_SEARCH_ERROR';

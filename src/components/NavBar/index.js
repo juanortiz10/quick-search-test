@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 
+import './styles.scss';
+
 class NavBar extends Component {
 	render() {
 		return (
-			<div>
-				NavBar
-				<span>hola</span>
+			<div className="navbar">
+				<div>
+					<span className="navbar--title">Recipe Finder</span>
+				</div>
+				<div>
+					<span className="navbar--section-label">Home</span>
+				</div>
 			</div>
 		);
 	}

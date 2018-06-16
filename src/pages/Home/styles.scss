@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	margin: 0;
+}
+
+.home {
+	&--search-container {
+		margin: 0% 10% 0% 10%;
+	}
+}
+
+.search-item {
+	&__gray,
+	&__white {
+		padding: 12px 0px 12px 8px;
+		font-size: 14px;
+	}
+	&__gray {
+		background-color: #f1f0f0;
+	}
+	&__white {
+		background-color: #fff;
+	}
+}
+
+.search-results-item {
+	margin-top: 2%;
+}

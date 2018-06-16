@@ -1,9 +1,15 @@
 const axios = require('axios');
 
-export const getDemo = params => {
-	const URL = 'https://reactjsteachingproj.herokuapp.com/users';
-
-	return axios.get(URL).then(response => {
+export const getSearchRequest = word => {
+	const URL = `http://www.recipepuppy.com/api/?i=${word}`;
+	return axios(URL, {
+		method: 'GET',
+		mode: 'no-cors',
+		headers: {
+			'Access-Control-Allow-Origin': '*',
+			'Content-Type': 'application/json'
+		}
+	}).then(response => {
 		return response.data;
 	});
 };
