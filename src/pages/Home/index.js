@@ -4,22 +4,15 @@ import { connect } from 'react-redux';
 
 import { getDemoRequest } from '../../redux/actions/demoActions';
 
-import User from '../../components/User';
+import NavBar from '../../components/NavBar';
 
 class Home extends Component {
-	componentWillMount() {
-		this.props.getDemoRequest('hey');
-	}
 	render() {
-		const { users } = this.props;
-
-		let items = [];
-		if (typeof users !== 'undefined') {
-			items = users.map((value, index) => {
-				return <User key={index} {...value} />;
-			});
-		}
-		return <div>{items}</div>;
+		return (
+			<div>
+				<NavBar />
+			</div>
+		);
 	}
 }
 
